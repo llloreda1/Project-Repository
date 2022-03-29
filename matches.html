@@ -6,9 +6,9 @@
     <meta charset="UTF-8" />
 
     <title>Chelsea Works</title>
-<!--Style for header & footer-->
+    <!--Style for header & footer-->
     <style>
-          h4 {
+        h4 {
             font-size: 50px;
             color: navy;
             text-shadow: 2px 2px 5px gold;
@@ -16,7 +16,8 @@
             text-align: center;
             background-color: royalblue;
             margin: 35px;
-         }
+        }
+
         header {
             background-color: rgb(33, 33, 214);
             height: 75px;
@@ -61,6 +62,7 @@
             background-color: navy;
             border-radius: 5px;
         }
+
         footer {
             padding: 5px;
             padding-right: 20px;
@@ -68,6 +70,19 @@
             color: white;
             display: flex;
             justify-content: space-between;
+        }
+    </style>
+    <!-- Style sheet for Matches -->
+    <style>
+        .imgfixtures {
+            object-fit: cover;
+            width: 100%;
+            height: 20%;
+            align-content: center;
+        }
+        h1 {
+            color: navy;
+            background-color: whitesmoke;
         }
     </style>
 </head>
@@ -88,12 +103,62 @@
     </header>
 
     <h4>CHELSEA WORKS</h4>
+    <img src="images\chelseafixtures.jpg" alt="Chelsea Fixtures" class="imgfixtures" title="Chelsea Fixtures/Matches"/>
     <div class="matches">
+        <div>
+            <ul class="matchday">
+                <h1>DATE	MATCH	TIME	COMPETITION</h1>
+                <li>
+                    Sat, Apr 2 Chelsea
+                    v
+                    Brentford
+                    10:00 AM
+                    English Premier League </li>
+                <li>
+                    Wed, Apr 6 Chelsea
+                    v 1st Leg
+                    Real Madrid
+                    3:00 PM
+                    UEFA Champions League</li>
+                <li>
+                    Sat, Apr 9 Southampton
+                    v
+                    Chelsea
+                    10:00 AM
+                    English Premier League</li>
+                <li>
+                    Tue, Apr 12 Real Madrid
+                    v 2nd Leg
+                    Chelsea
+                    3:00 PM
+                    UEFA Champions League</li>
+                <li>
+                    Sun, Apr 17 Chelsea
+                    v
+                    Crystal Palace
+                    11:30 AM
+                    English FA Cup ESPN+</li>
+                <li>
+                    Wed, Apr 20 Chelsea
+                    v
+                    Arsenal
+                    2:45 PM
+                    English Premier League</li>
+                <li>
+                    Sun, Apr 24 Chelsea
+                    v
+                    West Ham United
+                    9:00 AM
+                    English Premier League</li>
 
-    </div>
-<footer>
-        Chelsea Works &copy; 2022
-        <a href="">email:</a>
-    </footer>
+                </li>
+            </ul>
+
+        </div>
+        <footer>
+            Chelsea Works &copy; 2022
+            <a href="">email:</a>
+        </footer>
 </body>
+
 </html>
