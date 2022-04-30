@@ -2,261 +2,438 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="content-type" content="text/html" />
-    <meta charset="UTF-8" />
+  <meta http-equiv="content-type" content="text/html" />
+  <meta charset="UTF-8" />
 
-    <title>Chelsea Works</title>
-    <!--Style for header & footer-->
-    <style>
-        h4 {
-            font-size: 50px;
-            color: navy;
-            text-shadow: 2px 2px 5px gold;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            text-align: center;
-            background-color: royalblue;
-            margin: 35px;
-        }
+  <title>Chelsea Works</title>
+  <!--Style for header & footer-->
+  <style>
+    h4,
+    h1,
+    h2 {
+      font-size: 50px;
+      color: navy;
+      text-shadow: 2px 2px 5px gold;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-align: center;
+      background-color: royalblue;
+    }
 
-        header {
-            background-color: rgb(33, 33, 214);
-            height: 75px;
-            border-bottom: 2px solid darkblue;
-        }
+    h4,
+    h1,
+    h2:hover {
+      color: black;
+    }
 
-        body {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            background-color: white;
-            margin: 0;
-        }
+    header {
+      background-color: rgb(33, 33, 214);
+      height: 75px;
+      border-bottom: 2px solid darkblue;
+    }
 
-        .badge {
-            margin: 5px 20px;
-            text-align: left;
-        }
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+    }
 
-        .topnav {
-            float: left;
-            text-align: left;
-            margin: 25px;
-            list-style: none;
-            display: block;
-        }
+    .badge {
+      margin: 5px 20px;
+      text-align: left;
+    }
 
-        .topnav li {
-            margin: 10px;
-            padding: 10px 15px;
-            float: left;
-            display: block;
-            text-align: left;
-        }
+    .topnav {
+      float: left;
+      text-align: left;
+      margin: 25px;
+      list-style: none;
+      display: block;
+    }
 
-        .topnav a {
-            text-decoration: none;
-            color: whitesmoke;
-            font-weight: 600;
-            font-size: 18px;
-        }
+    .topnav li {
+      margin: 10px;
+      padding: 10px 15px;
+      float: left;
+      display: block;
+      text-align: left;
+    }
 
-        #select-navegation {
-            background-color: navy;
-            border-radius: 5px;
-        }
+    .topnav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 18px;
+    }
 
-        #select-navegation a {
-            color: gold;
-        }
+    #select-navegation {
+      background-color: navy;
+      border-radius: 5px;
+    }
 
-        footer {
-            padding: 5px;
-            padding-right: 20px;
-            background-color: rgb(33, 33, 214);
-            color: white;
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
-    <!-- Style for Homepage -->
-    <style>
-        .header-vid {
-            object-fit: cover;
-        }
+    #select-navegation a {
+      color: gold;
+    }
 
-        .club {
-            justify-content: center;
-            background-color: lightgray;
-            color: royalblue;
-            display: flex;
-            margin: 0;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
+    footer {
+      padding: 5px;
+      padding-right: 20px;
+      background-color: rgb(33, 33, 214);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <!-- Style for Homepage -->
+  <style>
+    .header-vid {
+      object-fit: cover;
+    }
 
-        table {
-            width: 100%;
-            padding: 40px;
-            text-align: center;
-            min-height: 250px;
-        }
+    .club {
+      justify-content: center;
+      background-color: lightgray;
+      color: royalblue;
+      display: flex;
+      margin: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 
-        .page {
-            text-align: center;
-            background-color: white;
-            border-radius: 4px;
-            width: 100%;
-            margin: 12px;
-            font-family: 'Times New Roman', Times, serif;
-        }
+    table {
+      width: 100%;
+      padding: 40px;
+      text-align: center;
+      min-height: 250px;
+    }
 
-        .page img {
-            width: 100%;
-            height: 100%;
-        }
+    .page {
+      text-align: center;
+      background-color: white;
+      border-radius: 4px;
+      width: 100%;
+      margin: 12px;
+      font-family: 'Times New Roman', Times, serif;
+    }
 
-        .btn {
-            font-size: 14px;
-            background-color: lightblue;
-            color: royalblue;
-            border: none;
-            padding: 10px 40px;
-            border-radius: 4px;
-            font-weight: 300;
-            margin: 20px;
-        }
+    .page img {
+      width: 100%;
+      height: 100%;
+    }
 
-        h2 {
-            color: navy;
-            font-size: 40px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            padding: 10px;
-            line-height: 1;
-            background-color: lightskyblue;
-        }
+    .btn {
+      font-size: 14px;
+      background-color: lightblue;
+      color: royalblue;
+      border: none;
+      padding: 10px 40px;
+      border-radius: 4px;
+      font-weight: 300;
+      margin: 20px;
+    }
 
-        .page-stadium img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    h2 {
+      color: navy;
+      font-size: 40px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      padding: 10px;
+      line-height: 1;
+      background-color: lightskyblue;
+    }
 
-        .page-text {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
-            color: black;
-            background-color: white;
-            text-align: center;
-        }
+    .page-stadium img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        #imgmatches {
-            width: 350px;
-            height: 250px;
-        }
-    </style>
+    .page-text {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      color: black;
+      background-color: white;
+      text-align: center;
+    }
+
+    #imgmatches {
+      width: 350px;
+      height: 250px;
+    }
+
+    #imagech {
+      width: 350px;
+      height: 350px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      tr {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    h2:hover {
+      color: 'black'
+    }
+
+    #btn {
+      background-color: navy;
+      color: gold;
+      height: 50px;
+      position: relative;
+      border: 3px solid gold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <img src="images\Chelsea-FC-icon.png" class="badge" alt="badge" width="60" height="60" />
-        <ul class="topnav">
-            <li id="select-navegation">
-                <a href="#">HOME PAGE</a>
-            </li>
-            <li><a href='homepage.html'>HOME</a></li>
-            <li><a href='aboutchelsea.html'>ABOUT CHELSEA</a></li>
-            <li><a href="squad.html">SQUAD</a></li>
-            <li><a href='matches.html'>MATCHES</a></li>
-            <li><a href='stamfordbridge.html'>STAMFORD BRIDGE</a></li>
-        </ul>
-    </header>
+  <header>
+    <img src="images\Chelsea-FC-icon.png" class="badge" alt="badge" width="60" height="60" />
+    <ul class="topnav">
+      <li id="select-navegation">
+        <a href="homepage.html">HOME PAGE</a>
+      </li>
+      <li><a href='aboutchelsea.html'>ABOUT CHELSEA</a></li>
+      <li><a href="squad.html">SQUAD</a></li>
+      <li><a href='matches.html'>MATCHES</a></li>
+      <li><a href='stamfordbridge.html'>STAMFORD BRIDGE</a></li>
+      <li><a href='contactus.html'>CONTACT</a></li>
+    </ul>
+  </header>
 
-    <h4>CHELSEA WORKS</h4>
-    <div style="height: 400px;">
-        <video width="100%" height="100%" loop muted autoplay class="header-vid">
-            <source src="images/chelseaVid.mp4" />
-        </video>
+  <h4>CHELSEA WORKS</h4>
+  <div style="height: 400px;">
+    <video width="100%" height="100%" loop muted autoplay class="header-vid">
+      <source src="images/chelseaVid.mp4" />
+    </video>
+  </div>
+  <br />
+
+  <br />
+  <div class="club">
+    <h1>All The Information About Chelsea Football Club</h1>
+  </div>
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="images\ChelseaChampionsLeague.jpg" style="width:100%">
     </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/maxresdefault.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/chelseafixtures.jpg" style="width:100%">
+    </div>
+
+
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images\ChelseaChampionsLeague.jpg" style="width:100%" onclick="currentSlide(1)"
+          alt="This is a web page dedicated to the Chelsea Futball Club. The goal of this web page is to
+      provide information to soccer fans and the clubs fans, in order to help access information
+      about the club and help Chelsea gain more supporters.">
+        <a href='aboutchelsea.html'>ABOUT CHELSEA</a>
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/maxresdefault.jpg" style="width:100%" onclick="currentSlide(2)"
+          alt="Each manager normally has more than 11 players from whom to choose his team; this is called
+               a squad. The best 11 players available will normally form the team. In here you will learn about the squads players, their positions, nationalities, ages and much more.">
+        <a href="squad.html">SQUAD</a>
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/chelseafixtures.jpg" style="width:100%" onclick="currentSlide(3)" alt=" 
+        Sat, Apr 2 Chelsea
+        
+        Brentford
+        10:00 AM
+        English Premier League 
+   
+        Wed, Apr 6 Chelsea
+        v 1stLeg
+        RealMadrid
+        3:00 PM
+        UEFA 
+    
+        Sat, Apr 9 Southampton
+        vChelsea
+        10:00 AM
+        EnglishPremierLeague">
+        <a href='matches.html'>MATCHES</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="page">
+
+
     <br />
-
-    <br />
-    <div class="club">
-        <h1>All The Information About Chelsea Football Club</h1>
+    <div class="page-container">
+      <h2>Chelsea's Stadium Stamford Bridge</h2>
     </div>
-    <div class="page">
-        <table>
-            <tr>
-                <td>
-                    <div class="fc">
-                        <img src="images\ChelseaChampionsLeague.jpg" alt="aboutchelsea" />
-                        <p>
-                            This is a web page dedicated to the Chelsea Futball Club. The goal of this web page is to
-                            provide information to soccer fans and the clubs fans, in order to help access information
-                            about the club and help Chelsea gain more supporters.
-                        </p>
-                        <button class="btn">Read More</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="fc">
-                        <img src="images/maxresdefault.jpg" alt="squad" />
-                        <p>
-                            Each manager normally has more than 11 players from whom to choose his team; this is called
-                            a squad. The best 11 players available will normally form the team.
-                        </p>
-                        <button class="btn">Read More</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="fc">
-                        <img src="images/chelseafixtures.jpg" alt="matches" id="imgmatches" />
-                        <ul class="matchday">
-                            <li>
-                                Sat, Apr 2 Chelsea
-                                v
-                                Brentford
-                                10:00 AM
-                                English Premier League </li>
-                            <li>
-                                Wed, Apr 6 Chelsea
-                                v 1st Leg
-                                Real Madrid
-                                3:00 PM
-                                UEFA Champions League</li>
-                            <li>
-                                Sat, Apr 9 Southampton
-                                v
-                                Chelsea
-                                10:00 AM
-                                English Premier League</li>
-                        </ul>
-                        <button class="btn">Read More</button>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <br />
-        <div class="page-container">
-            <h2>Chelsea's Stadium Stamford Bridge</h2>
+    <div class="page-text">
+      <p>
+      <ul>
+        <li>
+          Stamford Bridge is a football stadium in Fulham, adjacent to the borough of Chelsea in South
+          West London. It is the home of Premier League club Chelsea. With a capacity of 40,834, it is
+          the ninth largest venue of the 2021 and 2022 Premier League season."Stamford Bridge" is considered to be
+          a derivative of "Samfordesbrigge" meaning "the bridge at the sandy ford". Eighteenth century maps show a
+          "Stanford Creek" running along the route of what is now a railway line at the back of the East Stand as
+          a tributary of the Thames.</li>
+      </ul>
+      </p>
+      <div class="page-image">
+        <div class="page-stadium">
+          <img src="images/stamfordbridge.jpg" alt="stamfordbridge" title="stamfordbridge" />
         </div>
-        <div class="page-text">
-            <p>
-                Stamford Bridge is a football stadium in Fulham, adjacent to the borough of Chelsea in South
-                West London. It is the home of Premier League club Chelsea. With a capacity of 40,834, it is
-                the ninth largest venue of the 2021 and 2022 Premier League season."Stamford Bridge" is considered to be
-                a derivative of "Samfordesbrigge" meaning "the bridge at the sandy ford". Eighteenth century maps show a
-                "Stanford Creek" running along the route of what is now a railway line at the back of the East Stand as
-                a tributary of the Thames.
-            </p>
-            <div class="page-image">
-                <div class="page-stadium">
-                    <img src="images/stamfordbridge.jpg" alt="stamfordbridge" title="stamfordbridge" />
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
+  <button id="btn" class="float-left submit-button">Learn More</button>
+  <div>
+  </div>
+  <br>
 
-    <footer>
-        Chelsea Works &copy; 2022
-        <a href="">email:</a>
-    </footer>
+  <footer>
+    Chelsea Works &copy; 2022
+  </footer>
 </body>
+
+<script>
+  document.getElementById("btn").onclick = function () {
+    location.href = "stamfordbridge.html";
+  };
+
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+  }
+</script>
 
 </html>

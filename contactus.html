@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea Works</title>
+    <style>
+        h4 {
+            font-size: 50px;
+            color: navy;
+            text-shadow: 2px 2px 5px gold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            background-color: royalblue;
+        }
+
+        header {
+            background-color: rgb(33, 33, 214);
+            height: 75px;
+            border-bottom: 2px solid darkblue;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+        }
+
+        .badge {
+            margin: 5px 20px;
+            text-align: right;
+        }
+
+        .topnav {
+            float: left;
+            text-align: left;
+            margin: 25px;
+            list-style: none;
+            display: block;
+        }
+
+        .topnav li {
+            margin: 10px;
+            padding: 10px 15px;
+            float: left;
+            display: block;
+            text-align: left;
+        }
+
+        .topnav a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        #select-navegation {
+            background-color: navy;
+            border-radius: 5px;
+        }
+
+        footer {
+            padding: 5px;
+            padding-right: 20px;
+            background-color: rgb(33, 33, 214);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+       
+    </style>
+
+    <style>
+         @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+            .row{
+            display: flex;
+                flex-direction: row;
+            }
+}  
+        /* Your styles go here */
+        .topnav a.active {
+          background-color: #d6c0a3;
+          color: rgb(255, 237, 215);
+        }
+        @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          outline: none;
+        }
+        body {
+          background-image: url(contactback.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          height: 100vh;
+        }
+        .con {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+          padding: 0 20px;
+        }
+        .ContactForm {
+          background-color: red;
+          max-width: 550px;
+          margin: 0 auto;
+          background: #ffffff;
+          padding: 30px;
+          border-radius: 5px;
+          display: flex;
+          box-shadow: 0 0 10px;
+          margin-top: 20px;
+        }
+        .BlankFields {
+          display: flex;
+          flex-direction: column;
+          margin-right: 4%;
+        }
+        .BlankFields,
+        .message {
+          width: 48%;
+        }
+        .BlankFields .input,
+        .message textarea {
+          margin: 10px 0;
+          background: transparent;
+          border: 0;
+          border-bottom: 2px solid #5c5c5c;
+          padding: 10px;
+          color: #5c5c5c;
+          width: 100%;
+        }
+        .message textarea {
+          height: 212px;
+        }
+        .button {
+          background: rgba(124, 124, 124, 0.877);
+          text-align: center;
+          padding: 15px;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+          text-transform: uppercase;
+        }
+       
+        @media screen and (max-width: 600px) {
+          .ContactForm {
+            flex-direction: column;
+          }
+  
+          .message textarea {
+            height: 80px;
+          }
+          .BlankFields,
+          .message {
+            width: 100%;
+          }
+          .image1{
+              display: flex;
+              flex-direction: column;
+          }
+          .image2{
+              display: flex;
+              flex-direction: column;
+          }
+          .gallery{
+            display: flex;
+          }
+        }
+  
+        #topnav {
+          list-style: none;
+          overflow: hidden;
+        }
+  
+        li {
+          float: left;
+          display: block;
+          text-align: center;
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+  
+        a {
+          text-decoration: none;
+          color: rgb(88, 48, 48);
+        }
+        #form56{
+            margin-right: 50%;
+        }
+        a:hover{
+            color:white;
+            background-color: black;
+            padding:10px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images\Chelsea-FC-icon.png" class="badge" alt="badge" width="60" height="60" />
+        <ul class="topnav">
+            <li id="select-navegation">
+                <a href="homepage.html">HOME PAGE</a>
+            </li>
+            <li><a href='aboutchelsea.html'>ABOUT CHELSEA</a></li>
+            <li><a href='squad.html'>SQUAD</a></li>
+            <li><a href='matches.html'>MATCHES</a></li>
+            <li><a href='stamfordbridge.html'>STAMFORD BRIDGE</a></li>
+            <li><a href='contactus.html'>CONTACT</a></li>
+        </ul>
+    </header>
+
+    <div id="form56">
+        <form
+          name="contactForm"
+          method="post"
+          action="https://oim-apis.herokuapp.com/form2"
+        ></form>
+        <div class="ContactForm">
+          <div class="BlankFields">
+            <input
+              type="text"
+              class="input"
+              placeholder="Name (First and Last)"
+              name="name"
+            />
+            <input
+              type="text"
+              class="input"
+              placeholder="Email Address"
+              name="email"
+            />
+            <input
+              type="text"
+              class="input"
+              placeholder="Phone Number"
+              name="phone"
+            />
+          </div>
+          <div class="message">
+            <textarea placeholder="Message" name="message"></textarea>
+            <div class="button" onclick="submitForm()">Send Message</div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        Chelsea Works &copy; 2022
+    </footer>
+    
+</body>
+<script>
+    function submitForm() {
+      const form = document.forms["contactForm"];
+      const name = document.getElementsByName("name")[0].value;
+      const email = document.getElementsByName("email")[0].value;
+      const phone = document.getElementsByName("phone")[0].value;
+      const message = document.getElementsByName("message")[0].value;
+      if (name === "") {
+        alert("Name cannot be empty");
+        return false;
+      }
+      if (email === "") {
+        alert("Email cannot be empty");
+        return false;
+      }
+      if (phone === "") {
+        alert("Phone cannot be empty");
+        return false;
+      }
+      if (message === "") {
+        alert("Message cannot be empty");
+        return false;
+      }
+      form.submit();
+    }
+  </script>
+
+</html>

@@ -125,18 +125,17 @@
         }
 
         .pic1 {
-            text-align: center;
-            margin-left: 39%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
         }
 
         .pic2 {
-            text-align: center;
-            margin-left: 10%;
-        }
-
-        .pic3 {
-            text-align: center;
-            margin-left: 42%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
         }
 
         .general-information-text {
@@ -147,21 +146,49 @@
             font-family: 'Times New Roman', Times, serif;
             font-size: 24px;
         }
+
+        h3:hover {
+            color: black;
+        }
+
+        a:hover {
+            color: white;
+            background-color: black;
+            padding: 10px
+        }
+        #btn1 {
+            color: gold;
+            background-color: navy;
+            border: 3px solid gold;
+            height: 50px;
+        }
+        #btn2 {
+            color: gold;
+            background-color: navy;
+            border: 3px solid gold;
+            height: 50px;
+        }
+        #btn3 {
+            color: gold;
+            background-color: navy;
+            border: 3px solid gold;
+            height: 50px;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="images\Chelsea-FC-icon.png" class="badge" alt="badge" width="60" height="60" />
+        <img src="images\Chelsea-FC-icon.png" class="badge" alt="badge" width="60" height="60" class="pic2" />
         <ul class="topnav">
             <li id="select-navegation">
-                <a href="#">HOME PAGE</a>
+                <a href="homepage.html">HOME PAGE</a>
             </li>
-            <li><a href='homepage.html'>HOME</a></li>
             <li><a href='aboutchelsea.html'>ABOUT CHELSEA</a></li>
             <li><a href='squad.html'>SQUAD</a></li>
             <li><a href='matches.html'>MATCHES</a></li>
             <li><a href='stamfordbridge.html'>STAMFORD BRIDGE</a></li>
+            <li><a href='contactus.html'>CONTACT</a></li>
         </ul>
     </header>
 
@@ -173,9 +200,9 @@
     <div class="general-information">
         <div class="cont-general-information">
             <br>
-            <h2>About Chelsea</h2>
+            <h3>About Chelsea</h3>
             <div>
-                <img src="images\generalinfo.jpg" alt="aboutchelsea" width="300" height="300" class="pic3" />
+                <img src="images\generalinfo.jpg" alt="aboutchelsea" width="300" height="300" class="pic1" />
             </div>
             <div class="general-information-text">
                 <p>
@@ -187,10 +214,20 @@
                     are not open to the general public. Instead special open days are occasionally organized at Stamford
                     Bridge where fans can see the team train.
                 </p>
+                <div class="mid" id="HiddenDiv" style="display: none;">
+                    Chelsea are one of five clubs to have won all three of UEFA's main club competitions, the first
+                    English club to achieve the UEFA treble, and the only London club to have won the Champions League.
+                    Chelsea's home kit colours are royal blue shirts and shorts with white socks.
+
+                    The past twenty-five years have been the most successful in Chelsea's history: they have won five
+                    Premier League titles, seven FA Cups, four League Cups, two UEFA Champions League titles, two UEFA
+                    Europa League titles, two UEFA Super Cups, and one FIFA Club World Cup during this period.
+                </div>
+                <button id="btn1" onclick="readMore('HiddenDiv')">Read More</button>
                 <hr />
             </div>
             <div class="cont-general-information">
-                <h1>History</h1>
+                <h3>History</h3>
                 <div>
                     <img src="images\chelseahistory.jpg" alt="chelseahistory" width="300" height="300" class="pic1" />
                 </div>
@@ -201,13 +238,14 @@
                         land, to drawing big crowds with big stars, to modernising the club and winning trophies before
                         a financial collapse and memorable recovery, and then the upward path to the current era.
                     </p>
+                    <button id="btn2" class="float-left submit-button">Learn More</button>
                     <hr />
                 </div>
                 <br>
                 <h3>Club Partners</h3>
                 <div>
                     <img src="images/chelsea-kit-three-sponsors (1).jpg" alt="chelsea-kit-three-sponsors" width="200"
-                        height="200" class="pic3" />
+                        height="200" class="pic1" />
                 </div>
                 <div class="general-information-text">
                     <p>
@@ -217,13 +255,29 @@
                         cancelled as new ownership would rectify any problems. The current agreement, which is thought
                         to be worth £40 million per year, is set to run until the summer of 2023.
                     </p>
+                    <button id="btn3" class="float-left submit-button">BUY MERCH</button>
                     <hr />
                 </div>
 
                 <footer>
                     Chelsea Works &copy; 2022
-                    <a href="">email:</a>
                 </footer>
 </body>
+<script>
+    function readMore(divId) {
+        if (document.getElementById(divId).style.display == 'none') {
+            document.getElementById(divId).style.display = 'block';
+        }
+        else {
+            document.getElementById(divId).style.display = 'none';
+        }
+    };
+    document.getElementById("btn2").onclick = function () {
+        location.href = "https://www.chelseafc.com/en/history";
+    };
+    document.getElementById("btn3").onclick = function () {
+        location.href = "https://www.nike.com/w/chelsea-fc-2yc65";
+    };
+</script>
 
 </html>

@@ -15,7 +15,6 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-align: center;
             background-color: royalblue;
-            margin: 35px;
         }
 
         header {
@@ -71,6 +70,7 @@
             display: flex;
             justify-content: space-between;
         }
+       
     </style>
     <!-- Style sheet for Stamford Bridge -->
     <style>
@@ -111,7 +111,100 @@
             color: navy;
             text-align: center;
         }
-    </style>
+        @media only screen and (max-width: 768px) {
+            .row{
+            display: flex;
+                flex-direction: row;
+            }
+}  
+        /* Your styles go here */
+        .topnav a.active {
+          background-color: #d6c0a3;
+          color: rgb(255, 237, 215);
+        }
+        @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          outline: none;
+        }
+        body {
+          background-image: url(contactback.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          height: 100vh;
+        }
+        .con {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+          padding: 0 20px;
+        }
+        
+        .button {
+          background: rgba(124, 124, 124, 0.877);
+          text-align: center;
+          padding: 15px;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+          text-transform: uppercase;
+        }
+       
+        @media screen and (max-width: 600px) {
+          .ContactForm {
+            flex-direction: column;
+          }
+  
+          .message textarea {
+            height: 80px;
+          }
+          .BlankFields,
+          .message {
+            width: 100%;
+          }
+          .image1{
+              display: flex;
+              flex-direction: column;
+          }
+          .image2{
+              display: flex;
+              flex-direction: column;
+          }
+          .gallery{
+            display: flex;
+          }
+        }
+  
+        #topnav {
+          list-style: none;
+          overflow: hidden;
+        }
+  
+        li {
+          float: left;
+          display: block;
+          text-align: center;
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+  
+        a {
+          text-decoration: none;
+          color: rgb(88, 48, 48);
+        }
+        #form56{
+            margin-bottom: 100px;
+        }
+        a:hover{
+            color:white;
+            background-color: black;
+            padding:10px
+        }
+      </style>
 </head>
 
 <body>
@@ -119,13 +212,13 @@
         <img src="images\Chelsea-FC-icon.png" class="badge" alt="badge" width="60" height="60" />
         <ul class="topnav">
             <li id="select-navegation">
-                <a href="#">HOME PAGE</a>
+                <a href="homepage.html">HOME PAGE</a>
             </li>
-            <li><a href='homepage.html'>HOME</a></li>
             <li><a href='aboutchelsea.html'>ABOUT CHELSEA</a></li>
             <li><a href='squad.html'>SQUAD</a></li>
             <li><a href='matches.html'>MATCHES</a></li>
             <li><a href='stamfordbridge.html'>STAMFORD BRIDGE</a></li>
+            <li><a href='contactus.html'>CONTACT</a></li>
         </ul>
     </header>
     <h4>CHELSEA WORKS</h4>
@@ -133,38 +226,48 @@
     <h1>Stamford Bridge</h1>
     <div class="gallery">
         <div class="row">
+            <div class="image1">
             <div class="pic">
                 <img src="images\Stamford_Bridge_1905.jpg" alt="stamford Bridge 1905" title="Stamford Bridge 1905"
-                    style="width: 200px;" height="200px" />
+                    style="width: 200px;" height="200px" onmouseover="makeBig(this)"
+                    onmouseout="makeSmall(this)" />
             </div>
             <div class="pic">
                 <img src="images\Chelsea's_Stamford_Bridge_stadium_1909.jpg" alt="stamford Bridge 1909"
-                    title="Stamford Bridge 1905" style="width: 200px;" height="200px" />
+                    title="Stamford Bridge 1905" style="width: 200px;" height="200px"  onmouseover="makeBig(this)"
+                    onmouseout="makeSmall(this)"/>
             </div>
             <div class="pic">
                 <img src="images/Stamford_Bridge_1930s.JPG" alt="stamford Bridge 1930" title="Stamford Bridge 1930"
-                    style="width: 200px;" height="200px" />
+                    style="width: 200px;" height="200px" onmouseover="makeBig(this)"
+                    onmouseout="makeSmall(this)" />
             </div>
             <div class="pic">
                 <img src="images/stamfordbridge1960.jpeg" alt="stamford Bridge 1960" title="Stamford Bridge 1960"
-                    style="width: 200px;" height="200px" />
-            </div>
+                    style="width: 200px;" height="200px" onmouseover="makeBig(this)"
+                    onmouseout="makeSmall(this)" />
+            </div></div>
+            <div class="image2">
             <div class="pic2">
                 <img src="images/Stamford_Bridge_2004.JPG" alt="stamford Bridge 2004" title="Stamford Bridge 2004"
-                    style="width: 200px;" height="200px" />
+                    style="width: 200px;" height="200px"  onmouseover="makeBig(this)"
+                    onmouseout="makeSmall(this)"/>
             </div>
             <div class="pic2">
                 <img src="images/Stamfordbridge2020.jpg" alt="stamford Bridge 2020" title="Stamford Bridge 2020"
-                    style="width: 200px;" height="200px" />
+                    style="width: 200px;" height="200px"  onmouseover="makeBig(this)"
+                    onmouseout="makeSmall(this)"/>
             </div>
             <div class="pic2">
                 <img src="images/chelseaconcept.jpg" alt="stamford Bridge future" title="Stamford Bridge future concept"
-                    style="width: 200px;" height="200px" />
+                    style="width: 200px;" height="200px" onmouseover="makeBig(this)"
+                    onmouseout="makeSmall(this)" />
             </div>
             <div class="pic2">
                 <img src="images\stamfordbridgetime.jpg" alt="stamford Bridge over time" title="Stamford Bridge collage"
-                    style="width: 200px;" height="200px" />
-            </div>
+                    style="width: 200px;" height="200px"  onmouseover="makeBig(this)"
+                    onmouseout="makeSmall(this)"/>
+            </div></div>
         </div>
         <br />
         <br />
@@ -194,24 +297,47 @@
         <hr />
         <h2>History of Stamford Bridge</h2>
         <div class="text-info">
-            <p>
+            <p class="changetext" onclick="changeText()">
                 Stamford Bridge is a football stadium in Fulham, adjacent to the borough of Chelsea in
                 South West London. It is the home of Premier League club Chelsea. With a capacity of 40,834, it is the
                 ninth largest venue of the 2021 to 2022 Premier League season.
 
-                Opened in 1877, the stadium was used by the London Athletic Club until 1905, when new owner Gus Mears
-                founded Chelsea Football Club to occupy the ground; Chelsea have played their home games there ever
-                since. It has undergone major changes over the years, most recently in the 1990s when it was renovated
-                into a modern, all-seater stadium.
-
-                Stamford Bridge has been a venue for England international matches, FA Cup Finals, FA Cup semi-finals
-                and Charity Shield games. It has also hosted numerous other sports, such as cricket, rugby union, rugby
-                league, speedway, greyhound racing, baseball and American football. The stadium's highest official
-                attendance is 82,905, for a league match between Chelsea and Arsenal on 12 October 1935.
             </p>
         </div>
     </div>
     </div>
+    <br>
+    <label>Click Text To Learn More</label>
+    
+    <footer>
+        Chelsea Works &copy; 2022
+    </footer>
 </body>
+<script>
+    function changeText() {
+      const textItem = document.getElementsByClassName("text-info")[0];
+      textItem.innerText =
+        " Opened in 1877, the stadium was used by the London Athletic Club until 1905, when new owner Gus Mears founded Chelsea Football Club to occupy the ground; Chelsea have played their home games there ever since. It has undergone major changes over the years, most recently in the 1990s when it was renovated into a modern, all-seater stadium. Stamford Bridge has been a venue for England international matches, FA Cup Finals, FA Cup semi-finals  and Charity Shield games. It has also hosted numerous other sports, such as cricket, rugby union, rugby league, speedway, greyhound racing, baseball and American football. The stadium's highest official attendance is 82,905, for a league match between Chelsea and Arsenal on 12 October 1935.";
+    }
+  </script>
+    <script>
+        function makeBig(x) {
+          x.style.width = "200px";
+          x.style.height = "200px";
+          x.style.transform = "rotate(45deg)";
+          x.style.transform = "rotate(90deg)";
+          x.style.transform = "rotate(135deg)";
+          x.style.transform = "rotate(180deg)";
+        }
+        function makeSmall(x) {
+          x.style.width = "200px";
+          x.style.height = "200px";
+          x.style.transform = "rotate(225deg)";
+          x.style.transform = "rotate(270deg)";
+          x.style.transform = "rotate(315deg)";
+          x.style.transform = "rotate(360deg)";
+        }
+      </script>
+    
 
 </html>
