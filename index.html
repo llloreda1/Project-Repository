@@ -185,11 +185,16 @@
     }
 
     .container {
-      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .mySlides {
-      display: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
     }
 
 
@@ -224,10 +229,9 @@
     }
 
     .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
+      color: black;
+      font-size: 20px;
       padding: 8px 12px;
-      position: absolute;
       top: 0;
     }
 
@@ -304,45 +308,69 @@
   </div>
   <div class="container">
     <div class="mySlides">
-      <div class="numbertext">1 / 3</div>
-      <img src="images\ChelseaChampionsLeague.jpg" style="width:100%">
+      <div class="numbertext">1 / 6</div>
+      <img src="images\ChelseaChampionsLeague.jpg">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 3</div>
-      <img src="images/maxresdefault.jpg" style="width:100%">
+      <div class="numbertext">2 / 6</div>
+      <img src="images/maxresdefault.jpg">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">3 / 3</div>
-      <img src="images/chelseafixtures.jpg" style="width:100%">
+      <div class="numbertext">3 / 6</div>
+      <img src="images/chelseafixtures.jpg">
     </div>
 
-
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="images/chelseafixtures.jpg">
     </div>
 
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="images\ChelseaChampionsLeague.jpg" style="width:100%" onclick="currentSlide(1)"
-          alt="This is a web page dedicated to the Chelsea Futball Club. The goal of this web page is to
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/Chelsea-ccb035e.jpg">
+      </div>
+
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/chelseacup.jpg">
+        </div>
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/chelseaflag.png">
+          </div>
+
+
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="images\ChelseaChampionsLeague.jpg" style="width:100%"
+                onclick="currentSlide(1)" alt="This is a web page dedicated to the Chelsea Futball Club. The goal of this web page is to
       provide information to soccer fans and the clubs fans, in order to help access information
       about the club and help Chelsea gain more supporters.">
-        <a href='aboutchelsea.html'>ABOUT CHELSEA</a>
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/maxresdefault.jpg" style="width:100%" onclick="currentSlide(2)"
-          alt="Each manager normally has more than 11 players from whom to choose his team; this is called
+  
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/maxresdefault.jpg" style="width:100%" onclick="currentSlide(2)"
+                alt="Each manager normally has more than 11 players from whom to choose his team; this is called
                a squad. The best 11 players available will normally form the team. In here you will learn about the squads players, their positions, nationalities, ages and much more.">
-        <a href="squad.html">SQUAD</a>
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="images/chelseafixtures.jpg" style="width:100%" onclick="currentSlide(3)" alt=" 
+      
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/chelseafixtures.jpg" style="width:100%" onclick="currentSlide(3)"
+                alt=" 
         Sat, Apr 2 Chelsea
         
         Brentford
@@ -359,46 +387,56 @@
         vChelsea
         10:00 AM
         EnglishPremierLeague">
-        <a href='matches.html'>MATCHES</a>
-      </div>
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/Chelsea-ccb035e.jpg" style="width:100%" onclick="currentSlide(4)">
+            </div>
 
-    </div>
-  </div>
+            <div class="column">
+              <img class="demo cursor" src="images/chelseacup.jpg" style="width:60%" onclick="currentSlide(5)">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/chelseaflag.png" style="width:100%" onclick="currentSlide(6)">
+            </div>
+          </div>
 
-  <div class="page">
-
-
-    <br />
-    <div class="page-container">
-      <h2>Chelsea's Stadium Stamford Bridge</h2>
-    </div>
-    <div class="page-text">
-      <p>
-      <ul>
-        <li>
-          Stamford Bridge is a football stadium in Fulham, adjacent to the borough of Chelsea in South
-          West London. It is the home of Premier League club Chelsea. With a capacity of 40,834, it is
-          the ninth largest venue of the 2021 and 2022 Premier League season."Stamford Bridge" is considered to be
-          a derivative of "Samfordesbrigge" meaning "the bridge at the sandy ford". Eighteenth century maps show a
-          "Stanford Creek" running along the route of what is now a railway line at the back of the East Stand as
-          a tributary of the Thames.</li>
-      </ul>
-      </p>
-      <div class="page-image">
-        <div class="page-stadium">
-          <img src="images/stamfordbridge.jpg" alt="stamfordbridge" title="stamfordbridge" />
         </div>
       </div>
-    </div>
-  </div>
-  <button id="btn" class="float-left submit-button">Learn More</button>
-  <div>
-  </div>
-  <br>
 
-  <footer>
-    Chelsea Works &copy; 2022
-  </footer>
+      <div class="page">
+
+
+        <br />
+        <div class="page-container">
+          <h2>Chelsea's Stadium Stamford Bridge</h2>
+        </div>
+        <div class="page-text">
+          <p>
+          <ul>
+            <li>
+              Stamford Bridge is a football stadium in Fulham, adjacent to the borough of Chelsea in South
+              West London. It is the home of Premier League club Chelsea. With a capacity of 40,834, it is
+              the ninth largest venue of the 2021 and 2022 Premier League season."Stamford Bridge" is considered to be
+              a derivative of "Samfordesbrigge" meaning "the bridge at the sandy ford". Eighteenth century maps show a
+              "Stanford Creek" running along the route of what is now a railway line at the back of the East Stand as
+              a tributary of the Thames.</li>
+          </ul>
+          </p>
+          <div class="page-image">
+            <div class="page-stadium">
+              <img src="images/stamfordbridge.jpg" alt="stamfordbridge" title="stamfordbridge" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="btn" class="float-left submit-button">Learn More</button>
+      <div>
+      </div>
+      <br>
+
+      <footer>
+        Chelsea Works &copy; 2022
+      </footer>
 </body>
 
 <script>
